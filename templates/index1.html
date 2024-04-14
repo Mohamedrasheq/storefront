@@ -1,0 +1,1207 @@
+<html>
+
+<head>
+
+    
+    
+    <meta charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+     
+
+        .food-munch-logo {
+            width: 80px;
+            height: 60px;
+            border-radius: 60px;
+        }
+
+        #navItem1 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+
+        #navItem2 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+
+        #navItem3 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+
+        #navItem4 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+        #navItem5 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+
+        .banner-section-bg-container {
+            background-image: url("https://i.pinimg.com/736x/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .banner-heading {
+            color: black;
+            font-family: "Roboto";
+            font-size: 45px;
+            font-weight: 300;
+        }
+
+        .banner-caption {
+            color: black;
+            font-family: "Roboto";
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .custom-button {
+            color: white;
+            background-color: green;
+            border-color: green;
+            border-style: solid;
+            width: 130px;
+            height: 45px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .custom-outline-button {
+            color: #d0b200;
+            background-color: transparent;
+            width: 130px;
+            height: 45px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #d0b200;
+            border-radius: 8px;
+        }
+
+        .wcu-section {
+            background-color: #f9fbfe;
+        }
+
+        .wcu-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .wcu-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+        }
+
+        .wcu-card {
+            text-align: center;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e5eaf4;
+            border-radius: 16px;
+        }
+
+        .wcu-card-image {
+            width: 87px;
+            height: 90px;
+        }
+
+        .wcu-card-title {
+            color: #323f4b;
+            font-family: "Roboto";
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .wcu-card-description {
+            color: #7b8794;
+            font-family: "Roboto";
+            font-size: 16px;
+        }
+
+        .offers {
+            color: #323f4b;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .explore-menu-section {
+            background-color: white;
+        }
+
+        .menu-section-heading {
+            color: orange;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .menu-item-image {
+            border-radius: 16px;
+        }
+
+        .menu-card-title {
+            color: orange;
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 24px;
+        }
+
+        .menu-item-link {
+            color: #d0b200;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .menu-item-card {
+            border-radius: 16px;
+            text-align: justify;
+        }
+
+        .healthy-food-section {
+            background-color: #f9fbfe;
+        }
+
+        .healthy-food-section-img {
+            width: 270px;
+        }
+
+        .healthy-food-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .healthy-food-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+        }
+
+        .delivery-and-payment-section {
+            background-color: white;
+        }
+
+        .delivery-and-payment-section-img {
+            border-radius: 30px;
+        }
+
+        .delivery-and-payment-section-heading {
+            color: orange;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .delivery-and-payment-section-description {
+            color: black;
+            font-family: "Roboto";
+            font-size: 16px;
+        }
+
+        .payment-card-img {
+            width: 50px;
+            height: 50px;
+            margin-right: 28px;
+        }
+
+        .thanking-customers-section {
+            background-color: #d0b2001a;
+        }
+
+        .thanking-customers-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .thanking-customers-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+        }
+
+        .thanking-customers-section-img {
+            width: 270px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section {
+            background-color: #0d2436;
+        }
+
+        .footer-section-mail-id {
+            color: #959ead;
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .footer-section-address {
+            color: #959ead;
+            font-family: "Roboto";
+            font-size: 14px;
+        }
+
+        .paper-descrip1 {
+            color: black;
+        }
+
+        .reg-link {
+            color: white;
+        }
+
+        .about1 {
+            color: orange;
+            font-size: 180%;
+        }
+
+        .follow-us-section {
+            background-color: white;
+        }
+
+        .follow-us-section-heading {
+            text-align: center;
+            color: orange;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .follow-us-icon-container {
+
+            background-color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            margin: 15px;
+            padding-top: 22px;
+            padding-bottom: 14px;
+            padding-right: 16px;
+            padding-left: 22px;
+        }
+
+        .icon {
+            color: rgb(5, 184, 244);
+            font-size: 40px;
+        }
+
+        .footer-section {
+            background-color: #222222;
+        }
+
+        .footer-section-mail-id {
+            color: #959ead;
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .footer-section-address {
+            color: #959ead;
+            font-family: "Roboto";
+            font-size: 14px;
+        }
+
+        .contact-section-heading {
+            color: grey;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .contact-section-paragraph {
+            color: #959ead;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .contact-section-container {
+            border-radius: 10px;
+            margin-bottom: 5%;
+        }
+
+
+        .img4 {
+            background-image: url("https://i.pinimg.com/736x/be/df/b0/bedfb00b5e41529cf3e78de65f1ce177.jpg");
+        }
+
+        .img6 {
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .img7 {
+            background-color: black;
+        }
+
+        .c1 {
+            background-color: #e7e9eb;
+        }
+
+        #map {
+            height: 50%;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .explore-menu-section >.container > div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        } 
+
+        .regis_Btb{
+        color: white;
+        background-color:#1b7bc8;
+        height: 30px;
+        border-radius: 8px;
+        font-size: small;
+        font-weight: bold   ;
+       }
+
+
+
+        
+        .popup {
+			position:fixed;
+            padding-top: 1%;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+            /* overflow-y: scroll; */
+			background-color: rgba(0, 0, 0, 0.75);
+			display: none;
+            
+		}
+		.popup-content {
+            position: fixed;
+			background-color: white;
+			margin: 10% auto;            
+			padding: 20px;
+			border: 1px solid #888888;
+			width: 100%;
+            color:black;
+            border-radius: 20px;
+			font-weight: bolder;
+		}
+        .popup-content h3 {
+        font-size: 18px;
+    }
+
+    
+		.popup-content button {
+			display: block;
+			margin: 0 auto;
+		}
+		.show {
+			display: block;
+		}
+
+        /* Media Query for mobile view */
+    @media only screen and (max-width: 600px) {
+    .popup{
+        padding-top: 20%;
+        /* overflow-y: scroll; */
+    }
+    .popup-content {
+        padding-top: 10%;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .popup-content h1 {
+        font-size: 18px;
+    }
+
+    .popup-content li {
+        font-size: 12px;
+    }
+    .popup-content h3{
+        font-size: 10px;
+        font-weight: bold;
+    }
+  
+
+}
+
+
+
+
+    </style>
+   
+
+
+</head>
+
+<body>
+    <div class="bootstrap-iso">
+        
+    <nav class="navbar navbar-expand-sm navbar-light c1 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/736x/c2/67/63/c26763cc187d0185c26e0faddc2e8607.jpg" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#Home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#About1" id="navItem1">About</a>
+                    <a class="nav-link" href="#FormalTeamEvents" id="navItem2">Formal Team Events</a>
+                    <a class="nav-link" href="#FormalEvents" id="navItem3">Formal Individual Events</a>
+                    <a class="nav-link" href="#InFormalEvents" id="navItem4">Informal Events</a>                    
+                    <a class="nav-link" href="#Contacts" id="navItem5">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+<div id="Home">
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <br><br><br><br>
+            <h1 class="banner-heading mb-3">A NATIONAL LEVEL TECHNO FEST</h1>
+            <p class="banner-caption mb-4">Unleash your creativity, ignite your passion, and celebrate innovation at our national level technocultural fest!</p>
+            
+        </div>
+    </div>
+</div>
+    
+    <div class="delivery-and-payment-section pt-5 pb-5 d-flex justify-content-center flex-column" id="About1">
+        <div class="container">
+            <div class="row shadow img6">
+                <div class="col-12 col-md-6 col-xl-6 order-1 order-md-2">
+                    <div class="text-center">
+                        <iframe class="delivery-and-payment-section-img w-100" style="height:240px" src="https://www.youtube.com/embed/DV_r9tw8uo8?rel=0"></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-6 order-2 order-md-1">
+                    <h1 class="about1">About</h1>
+                    <p class="delivery-and-payment-section-description">
+                        GUSTO 2K24 is hosted by Government college of Engineering,Erode on
+                        exploration at IT department.Gusto with an enthusiasm of technical expertise and competitive spirit.Discover the latest advancements
+                        in various field and explore how technology is transforming into
+                        industries,ensuring security and innovation.Our symposium offers
+                        valuable knowledge and networking opportunities to inspire and empower in
+                        the world of IT.With an expected students from various colleges.
+                        This event emphasis idea,talent and harmony.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery-and-payment-section pt-5 pb-5 d-flex justify-content-center flex-column" id="deliveryPaymentSection">
+        <div class="container">
+            <div class="row shadow img6">
+                <div class="col-12 col-md-6 col-xl-6 order-1 order-md-2">
+                    <div class="text-center">
+                        <img src="https://images.shiksha.com/mediadata/images/1490350844php8CV3fy_g.jpg" class="delivery-and-payment-section-img w-100" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-6 order-2 order-md-1">
+                    <h1 class="delivery-and-payment-section-heading">
+                        Government College of Engineering - Erode
+                    </h1>
+                    <p class="delivery-and-payment-section-description">
+                        The college established in 1984, is a premier Engineering Institute. It was run by All Transport Corporations of Government of TamilNadu and now the Institute is converted as Government College of Engineering, Erode(GCEE). The Institute is located on a sprawling lush green campus of 200 acres between Chithode and Bhavani in Erode district. It provides a congenial atmosphere for Technical Education. The Institute has excellent infrastructure, well-equipped laboratories, library and highly qualified & experienced faculty members. The Institute is well known for its technical excellence, modern facilities, research activities, good academic performance track record and placements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="FormalTeamEvents">
+        <div class="container" style="border-radius: 10px;">
+            <h1 class="menu-section-heading">Formal Team Events</h1>
+            <div class="row">
+                
+    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+        
+        <div class="shadow menu-item-card p-3 mb-3">
+            <img src="https://i.pinimg.com/736x/10/9a/36/109a3639d42c3e59fcc27b0479143830.jpg" class="menu-item-image w-100" />
+            <h1 class="menu-card-title">PROJECT PRESENTATION</h1>
+            <p class="paper-descrip1">Join us for an engaging project presentation on any topic along with your protype model. Explore groundbreaking research findings, innovative methodologies, and insightful perspectives . Don't miss this opportunity to expand your knowledge and network with fellow enthusiasts.</p>
+            <button id="project_btn" class="regis_Btb">
+                RULES AND REGULATIONS ?
+            </button>
+            <div id="project_popup" class="popup">
+                <div class="popup-content">
+                    <h1 style="color:#7ba7b2;">
+                        RULES AND REGULATIONS :
+                    </h1>
+                    <ul>
+                        <li>The participants could be solo or a team of two/three.</li>
+                        <li>The participants must upload their project abstract, along with existing system, proposed solutions with methodology, and scope, maximum of 5 pages as softcopy during registration.</li>
+                        <li>The participants must bring their working project model and presentation slides.</li>
+                        <li>Presentation will approximately take 5-10 minutes per team, followed by live demonstration of the project.</li>
+                        <li>The participants must provide the project report as a hardcopy.</li>
+                        <li>Batches will be allocated based on the registration.</li>
+                        <li>The winners will be determined by juries.</li>
+                        <li>Contestants who violate the rules and guidelines will be eliminated instantly.</li>
+                    </ul>
+                    
+                    <button id="project_close" class="regis_Btb mt-4">
+                      Close
+                    </button>
+                </div>
+            </div>
+            <script>
+                project_btn.addEventListener("click", function () {
+                    project_popup.classList.add("show");
+                    
+                });
+                project_close.addEventListener("click", function () {
+                    project_popup.classList.remove("show");
+                    
+                    
+                });
+                window.addEventListener("click", function (event) {
+                    if (event.target == project_popup) {                     
+                        project_popup.classList.remove("show");
+                    }
+                    
+                });
+               
+            </script>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="shadow menu-item-card p-3 mb-3">
+            <img src="https://i.pinimg.com/736x/1d/83/c8/1d83c88e2d3892dc730cb44bddf08484.jpg" class="menu-item-image w-100" />
+            <h1 class="menu-card-title">PAPER PRESENTATION</h1>
+            <p class="paper-descrip1">Join us for an engaging paper presentation on any topic. Explore groundbreaking research findings, innovative methodologies, and insightful perspectives. Don't miss this opportunity to expand your knowledge and network with fellow enthusiasts.</p>
+            <button id="paper_btn" class="regis_Btb">
+                RULES AND REGULATIONS ?
+            </button>
+            <div id="paper_popup" class="popup">
+                <div class="popup-content">
+                    <h1 style="color:#7ba7b2;">
+                        RULES AND REGULATIONS :
+                    </h1>
+                    <ul>
+                        <li>Team participation is allowed, minimum two and maximum of three members.</li>
+                        <li>Participants must submit abstracts of their papers during the registration process.</li>
+                        <li>Papers will be shortlisted based on the quality, relevance, and originality of the abstract.</li>
+                        <li>Authors of the shortlisted papers will be notified of acceptance via email.</li>
+                        <li>Accepted authors will receive instructions on how to proceed with full paper submission and registration.</li>
+                        <li>Authors of accepted papers must prepare and deliver an oral presentation for 10 minutes on stage performance and may include visual aids such as PowerPoint slides and posters followed by Q&A.</li>
+                        <li>Winning contestants will be rewarded with cash prizes.</li>
+                    </ul>
+                    <button id="paper_close" class="regis_Btb mt-4">
+                      Close
+                    </button>
+                </div>
+            </div>
+            <script>
+                paper_btn.addEventListener("click", function () {
+                    paper_popup.classList.add("show");
+                });
+                paper_close.addEventListener("click", function () {
+                    paper_popup.classList.remove("show");
+                });
+                window.addEventListener("click", function (event) {
+                    if (event.target == paper_popup) {
+                        paper_popup.classList.remove("show");
+                    }
+                });
+            </script>
+            
+        </div>
+    </div>
+    
+
+    </div>
+</div>
+</div>
+    <div class="explore-menu-section pt-5 pb-5" id="FormalEvents">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Formal Individual Events</h1>
+                </div>
+               
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://i.pinimg.com/736x/d3/a7/6d/d3a76db931316d5b8cf53d8767a67d75.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">TECH QUIZ</h1>
+                        <p class="paper-descrip1">Join us for an exhilarating tech quiz competition where participants will showcase their knowledge across various domains of technology. From programming languages to cutting-edge advancements, put your skills to the test in this fast-paced and thrilling challenge.</p>
+                        <button id="tech_btn" class="regis_Btb">
+		                    RULES AND REGULATIONS ?
+	                    </button>
+	                    <div id="tech_popup" class="popup">
+		                    <div class="popup-content">
+			                    <h1 style="color:#7ba7b2;">
+				                    RULES AND REGULATIONS :
+			                    </h1>
+                                <ul>
+                                    <li>Online quiz based on programming languages (C, Python, Java) and SQL logic.</li>
+                                    <li>Conducted via online platform in the auditorium [proctored].</li>
+                                    <li>Individual participation.</li>
+                                    <li>Section A [Easy], Section B [Medium], Section C [Hard].</li>
+                                    <li>Questions cover topics in specified programming languages and SQL logic.</li>
+                                    <li>Time limit for completing the quiz.</li>
+                                    <li>Rules regarding cheating, plagiarism, and code of conduct will be strictly enforced.</li>
+                                    <li>Submission of responses within a specified time frame.</li>
+                                    <li>Each question may have multiple-choice, true/false, or short answer format.</li>
+                                    <li>Scores will be calculated automatically by the platform.</li>
+                                    <li>Only legitimate attempts will be considered for scoring.</li>
+                                    <li>Violation of rules results in disqualification.</li>
+                                </ul>
+			                    <button id="tech_close" class="regis_Btb mt-4">
+				                  Close
+			                    </button>
+		                    </div>
+	                    </div>
+                        <script>
+                            tech_btn.addEventListener("click", function () {
+                                tech_popup.classList.add("show");
+                            });
+                            tech_close.addEventListener("click", function () {
+                                tech_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == tech_popup) {
+                                    tech_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://i.pinimg.com/736x/bd/6f/3f/bd6f3f90c4db07b32aec3a7c371109f1.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">CODE DEBUGGING</h1>
+                        <p class="paper-descrip1">Event offers participants an opportunity to refine their programming skills by identifying and fixing errors in code, fostering problem-solving abilities crucial in software development. Participants engage in hands-on debugging challenges, enhancing their proficiency in troubleshooting and enhancing code efficiency.</p>
+                        <button id="debug_btn" class="regis_Btb">
+		                    RULES AND REGULATIONS ?
+	                    </button>
+                        
+	                    <div id="debug_popup" class="popup">
+		                    <div class="popup-content">
+			                    <h1 style="color:#7ba7b2;">
+				                    RULES AND REGULATIONS :
+			                    </h1>
+		                	    <ul>
+                                    <li>Code debugging event with provided code.</li>
+                                    <li>Individual participation only.</li>
+                                    <li>Preferred languages: C/Java.</li>
+                                    <li>"Pen and Paper" event, usage of internet and any other electronic devices is prohibited.</li>
+                                    <li>Two rounds, 30 minutes each, no extra time.</li>
+                                    <li>Batches allocated based on registration.</li>
+                                    <li>Prize for the first successful debugging or best debugging outcome.</li>
+                                    <li>Violations result in instant disqualification.</li>
+                                    <li>Misbehavior with volunteers leads to disqualification.</li>
+                                </ul>
+                                
+
+			                    <button id="debug_close" class="regis_Btb mt-4">
+				                  Close
+			                    </button>
+		                    </div>
+	                    </div>
+                        <script>
+                            debug_btn.addEventListener("click", function () {
+                                debug_popup.classList.add("show");
+                            });
+                            debug_close.addEventListener("click", function () {
+                                debug_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == debug_popup) {
+                                    debug_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://i.pinimg.com/474x/80/85/b6/8085b6d02fda7d4d9eec3c49355850a3.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">HUNT MODS</h1>
+                        <p class="paper-descrip1">Hunt Mods is a technical event focused on identifying modifications within code to alter its logic. Participants aim to pinpoint these changes and provide precise test case solutions. The event encourages deep understanding of code structures and effective problem-solving skills. Ultimately, participants compete to demonstrate their proficiency in debugging.</p>
+                        <button id="patch_btn" class="regis_Btb">
+                            RULES AND REGULATIONS ?
+                        </button>
+                        <div id="patch_popup" class="popup">
+                            <div class="popup-content">
+                                <h1 style="color:#7ba7b2;">
+                                    RULES AND REGULATIONS :
+                                </h1>
+                                <h3>ROUND 1 RULES: 30 MINS</h3>
+                                <ul>
+                                    <li>The code has the logical error in it, the participants need to alter the logic</li>
+                                    <li>And provide the output mentioned.</li>
+                                    <li>Preferred programming language: C, Python, Java</li>
+                                    <li>The program must be run only once, with proctoring by volunteers.</li>
+                                    <li>Participants can run the code 'n' times within the allocated time.</li>
+                                    <li>The participant to successfully run the program (based on time) or provide the best output will be shortlisted for the second round.</li>
+                                </ul>
+                            
+                                <h3>ROUND 2 RULES: 30 MINS</h3>
+                                <ul>
+                                    <li>The difficulty level of the question will be set to medium.</li>
+                                    <li>Participants can run the code 'n' times within the allocated time.</li>
+                                    <li>Time is everything for the event, no extended time for participants.</li>
+                                    <li>The participant to successfully run the program (based on time) or provide the best output will be declared the winner of the contest.</li>
+                                </ul>
+                                <button id="patch_close" class="regis_Btb mt-4">
+                                  Close
+                                </button>
+                            </div>
+                        </div>
+                        <script>
+                            patch_btn.addEventListener("click", function () {
+                                patch_popup.classList.add("show");
+                            });
+                            patch_close.addEventListener("click", function () {
+                                patch_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == patch_popup) {
+                                    patch_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://i.pinimg.com/564x/a3/3a/44/a33a44ac43e47836e0c832357566d682.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">BLIND CODING</h1>
+                        <p class="paper-descrip1">Blind Coding Challenge: Test your skills under pressure! Run your program only once; Failure means elimination. Are you up for the challenge? One shot, one opportunity. Test your knowledge and skills in this dynamic event!</p>
+                        <button id="blind_btn" class="regis_Btb">
+                            RULES AND REGULATIONS ?
+                        </button>
+                        <div id="blind_popup" class="popup">
+                            <div class="popup-content">
+                                <h1 style="color: #7ba7b2;">
+                                    RULES AND REGULATIONS :
+                                </h1>
+                                <h3>ROUND 1 RULES: 15 MINS</h3>
+                                <ul>
+                                    <li>Participants will be given a simple problem statement with input and output requirements.</li>
+                                    <li>Programming languages: C, Python, Java.</li>
+                                    <li>They must type the code in their preferred programming language.</li>
+                                    <li>The program must be run only once, with proctoring by volunteers.</li>
+                                    <li>Any errors faced during the first attempt at running the program lead to elimination.</li>
+                                    <li>The participants who successfully runs the program (based on time) or provides the best output will be shortlisted for the second round.</li>
+                                </ul>
+                                
+                                <h3>ROUND 2 RULES: 15 MINS</h3>
+                                <ul>
+                                    <li>The difficulty level of the question will be set to medium.</li>
+                                    <li>Any errors faced during the first attempt at running the program lead to elimination.</li>
+                                    <li>The first participant to successfully run the program (based on time) or provide the best output will be declared the winner of the contest.</li>
+                                </ul>
+                                <button id="blind_close" class="regis_Btb mt-4">
+                                  Close
+                                </button>
+                            </div>
+                        </div>
+                        <script>
+                            blind_btn.addEventListener("click", function () {
+                                blind_popup.classList.add("show");
+                            });
+                            blind_close.addEventListener("click", function () {
+                                blind_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == blind_popup) {
+                                    blind_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+
+ 
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="explore-menu-section pt-5 pb-5" id="InFormalEvents">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">INFORMAL EVENTS</h1>
+                    <br>
+                </div>
+                <!-- The CSS for this is logo -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="shadow menu-item-card p-3 mb-5">
+                        <img src="https://i.pinimg.com/564x/4f/4e/7c/4f4e7c05673c9706457f184446699b93.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">PHOTOGRAPHY</h1>
+                        <p class="paper-descrip1">Get ready to showcase your photography skills in our Solo Photography Contest! This thrilling event is tailored for individuals who have a passion for capturing stunning moments through their lenses and turning them into breathtaking works of art. Join us for an opportunity to win exciting prizes and gain recognition for your talent.</p>
+                        <button id="logo_btn" class="regis_Btb">
+		                    RULES AND REGULATIONS ?
+	                    </button>
+	                    <div id="logo_popup" class="popup">
+		                    <div class="popup-content">
+			                    <h1 style="color: #7ba7b2;">
+				                    RULES AND REGULATIONS :
+			                    </h1>
+                                <ul>
+                                    <li>Only solo participants are allowed.</li>
+                                    <li>The theme for the photo will be provided.</li>
+                                    <li>Only touch editing is allowed, and plagiarism will result in disqualification.</li>
+                                    <li>The photo must be uploaded online before the deadline.</li>
+                                    <li>The winner will be notified and rewarded with prizes.</li>
+                                  </ul>
+                                  
+			                    <button id="logo_close" class="regis_Btb mt-4">
+				                  Close
+			                    </button>
+		                    </div>
+	                    </div>
+                        <script>
+                            logo_btn.addEventListener("click", function () {
+                                logo_popup.classList.add("show");
+                            });
+                            logo_close.addEventListener("click", function () {
+                                logo_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == logo_popup) {
+                                    logo_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!-- The CSS for this names as Connextion conn -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="shadow menu-item-card p-3 mb-5">
+                        <img src="https://i.pinimg.com/564x/7a/5e/e0/7a5ee04333a660975fb4443789cbd703.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">NON-TECH QUIZ</h1>
+                        <p class="paper-descrip1">Prepare to put your thinking cap on and engage in our thrilling Non-Tech Quiz, centered around aptitude, logical reasoning, and problem-solving skills! This dynamic competition is perfect for individuals who enjoy challenging themselves and unraveling complex puzzles. Join us for an opportunity to showcase your mental acuity, compete against fellow enthusiasts, and win exciting prizes!</p>
+                        <button id="conn_btn" class="regis_Btb">
+		                    RULES AND REGULATIONS ?
+	                    </button>
+	                    <div id="conn_popup" class="popup">
+		                    <div class="popup-content">
+			                    <h1 style="color: #7ba7b2;">
+				                    RULES AND REGULATIONS :
+			                    </h1>
+		                	    <ul>
+                                    <li>Register within the time limit.</li>
+                                    <li>Only individual participation is allowed.</li>
+                                    <li>Usage of phones during the quiz is prohibited.</li>
+                                    <li>Discussion with others is not allowed.</li>
+                                    <li>Time constraints will be strictly followed.</li>
+                                    <li>The questions will be related to aptitude, logical reasoning and will check your puzzle-solving abilities.</li>
+                                    <li>The top scorers with the minimal time consumption will be rewarded with prizes.</li>
+                                  </ul>
+                                  
+			                    <button id="conn_close" class="regis_Btb mt-4">
+				                  Close
+			                    </button>
+		                    </div>
+	                    </div>
+                        <script>
+                            conn_btn.addEventListener("click", function () {
+                                conn_popup.classList.add("show");
+                            });
+                            conn_close.addEventListener("click", function () {
+                                conn_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == conn_popup) {
+                                    conn_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://i.pinimg.com/564x/56/b3/d8/56b3d83926d21c6cd368b4a31375e2d7.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">POSTER PLAGUE</h1>
+                        <p class="paper-descrip1">Unleash your creativity and design skills in our Poster Creation Competition! This exciting event invites participants to showcase their artistic talents while conveying powerful messages through visual communication. Whether you're a seasoned designer or a budding artist, this competition offers a platform to let your imagination soar.</p>
+                        <button id="poster_btn" class="regis_Btb">
+		                    RULES AND REGULATIONS ?
+	                    </button>
+	                    <div id="poster_popup" class="popup">
+		                    <div class="popup-content">
+			                    <h1 style="color: #7ba7b2;">
+				                    RULES AND REGULATIONS :
+			                    </h1>
+                                <ul>
+                                    <li>Participants must register within the deadline.</li>
+                                    <li>Team participation is not allowed.</li>
+                                    <li>Plagiarism is strictly prohibited.</li>
+                                    <li>The theme to create the poster is provided on the spot.</li>
+                                    <li>Participants must bring their own necessities for the competition.</li>
+                                  </ul>
+                                  
+			                    <button id="poster_close" class="regis_Btb mt-4">
+				                  Close
+			                    </button>
+		                    </div>
+	                    </div>
+                        <script>
+                            poster_btn.addEventListener("click", function () {
+                                poster_popup.classList.add("show");
+                            });
+                            poster_close.addEventListener("click", function () {
+                                poster_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == poster_popup) {
+                                    poster_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://i.pinimg.com/564x/32/61/b6/3261b6bf6bf3b24e7590c6f773e7df37.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">MEME MASTER</h1>
+                        <p class="paper-descrip1">Prepare to unleash your wit and creativity in our exciting On-Spot Meme Creation event! This unique competition challenges participants to think on their feet, as they are presented with a situation or prompt on the spot and tasked with creating humorous memes that capture the essence of the moment. Join us for an opportunity to showcase your humor, quick thinking, and meme-making skills, all while competing for exciting prizes!</p>
+                        <button id="meme_btn" class="regis_Btb">
+		                    RULES AND REGULATIONS ?
+	                    </button>
+	                    <div id="meme_popup" class="popup">
+		                    <div class="popup-content">
+			                    <h1 style="color:#7ba7b2;">
+				                    RULES AND REGULATIONS :
+			                    </h1>
+		                	    <ul>
+                                    <li>Register within the date provided.</li>
+                                    <li>Participants must bring the devices required.</li>
+                                    <li>Only individual participation is allowed.</li>
+                                    <li>The situation will be provided on the spot, and participants are asked to create memes.</li>
+                                    <li>The winners will be rewarded with exciting prizes.</li>
+                                    <li>Discussion is not allowed, and plagiarism is strictly prohibited.</li>
+                                  </ul>
+                                  
+			                    <button id="meme_close" class="regis_Btb mt-4">
+				                  Close
+			                    </button>
+		                    </div>
+	                    </div>
+                        <script>
+                            meme_btn.addEventListener("click", function () {
+                                meme_popup.classList.add("show");
+                            });
+                            meme_close.addEventListener("click", function () {
+                                meme_popup.classList.remove("show");
+                            });
+                            window.addEventListener("click", function (event) {
+                                if (event.target == meme_popup) {
+                                    meme_popup.classList.remove("show");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+    <div class="text-center mb-5 ">
+        <a href="html-form.html"><button class="custom-button " style="font-style:bold">REGISTER NOW</button></a>
+    </div>
+
+
+
+    <div class="d-flex flex-row justify-content-center">
+        <div class="d-flex flex-column justify-content-center" style="text-align:center;">
+        <div>
+            <h1>Web Team</h1>
+        </div>
+        <div>
+            <p>We are a passionate group of people dedicated <br> to making Gusto2k24 anamazing place for you to be.</p>
+        </div>
+    </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center mb-5">
+                    
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/736x/e5/dd/07/e5dd079eaae6c154c5af597d959c4c3c.jpg" class="d-block w-70" style="height:200px; width:200px;" alt="...">
+                    <div style="text-align:center;">
+                        <h1>RASHEQ</h1>
+                        <P>Frontend & Backend <br>Developer</P>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/de/4a/e2/de4ae2edc65c00f71e96897cb740f396.jpg" class="d-block w-70" style="height:200px; width:200px;"  alt="...">
+                    <div style="text-align:center;">
+                        <h1>BALU</h1>
+                        <P>Network & Security</P>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/d4/0f/aa/d40faaf5ecb173e4ec309887c4482285.jpg" class="d-block w-70" style="height:200px; width:200px;" alt="...">
+                    <div style="text-align:center;">
+                        <h1>KABI</h1>
+                        <P>Designer</P>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/40/f8/72/40f872c0e13767f8d967363dd8fd9d9a.jpg" class="d-block w-70" style="height:200px; width:200px;" alt="...">
+                    <div style="text-align:center;">
+                        <h1>ARUN</h1>
+                        <P>Content-creator</P>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/c5/05/15/c505156b0c64a10cdec593d72f2b257d.jpg" class="d-block w-70" style="height:200px; width:200px;" alt="...">
+                    <div style="text-align:center;">
+                        <h1>MANOJ</h1>
+                        <P>Designer</P>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/c6/0f/22/c60f22261693f78bed744312deee4ccd.jpg" class="d-block w-70" style="height:200px; width:200px;" alt="...">
+                    <div style="text-align:center;">
+                        <h1>ASHWANTH</h1>
+                        <P>Designer</P>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+      
+    
+              
+        </div>
+
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31288.149853300474!2d77.64693782113505!3d11.406185498185081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9699755561a47%3A0xb8c3c353be0ad19b!2sGovernment%20College%20of%20Engineering%2C%20Erode%20(IRTT%20%2FGCE-E)!5e0!3m2!1sen!2sin!4v1708181805805!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    <div class="follow-us-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <a href="https://www.linkedin.com/in/ashwanthjee-a-r-0b6782247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin icon"></i></a>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <a href="https://www.instagram.com/gcee_gusto_?igsh=MWZhcnRod3hkdGF0Nw=="><i class="fab fa-instagram icon"></i></a>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <a href="https://chat.whatsapp.com/JNk82Br40b3AiehZlWqkwF"><i class="fab fa-whatsapp icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer-section pt-5 pb-5" id="Contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://i.pinimg.com/736x/95/89/da/9589da1f639cdf0d11731a4a28081eb0.jpg" class="food-munch-logo" />
+                    <h1 class="footer-section-mail-id">gceegusto@gmail.com</h1>
+                    <p class="footer-section-address">
+                        Auditorium - Government College Of Engineering Erode
+                    </p>
+                </div>
+                <div class="col-12 contact-section-container text-center">
+                    <h1 class="contact-section-heading ">Contact us</h1>
+                    <p class="contact-section-paragraph">Phone : 6369124754, 9345816238, 6374491756, <br> 9342354942, 9677522616, 9944193417,<br> 9363446454, 8902325887 , 9488060901,<br> 9361151020 ,
+                    9626915822.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Any HTML here will be styled with Bootstrap CSS -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

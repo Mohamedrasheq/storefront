@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/dynamic_add.css' %}">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action="dynamicadd" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="city">City Name:</label><br>
+        <input type="text" id="city" name="city" required><br>
+        
+        <label for="picture">Picture:</label><br>
+        <input type="file" id="picture" name="picture" required><br>
+        
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br>
+        
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price" required><br>
+        
+        <label for="offer">Offer:</label><br>
+        <input type="checkbox" id="offer" name="offer"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
